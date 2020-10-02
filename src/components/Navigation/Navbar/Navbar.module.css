@@ -1,0 +1,66 @@
+.Navbar {
+  font-family: "Google Sans", sans-serif;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.Container {
+  max-width: 1170px;
+  min-height: 70px;
+  margin: 0 auto;
+  padding: 0 15px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+@media (min-width: 992px) {
+  .Container {
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .Container {
+    width: 1170px;
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 1200px) {
+  .Container {
+    width: 1170px;
+  }
+}
+
+.NavbarLeft {
+  float: left;
+  box-sizing: border-box;
+}
+
+@media (min-width: 992px) {
+  .NavbarLeft {
+    align-items: center;
+    display: flex;
+  }
+}
+
+.NavbarLogo {
+  top: 0;
+  padding: 0 0 0 0;
+  display: flex;
+  justify-content: flex-start;
+  float: none;
+  width: auto;
+  font-size: 19px;
+  line-height: 21px;
+  align-items: center;
+}
+
+@media (min-width: 992px) {
+  .NavbarLogo {
+    height: 38px;
+    padding-left: 20px;
+    margin-left: -20px;
+  }
+}
