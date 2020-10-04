@@ -1,7 +1,46 @@
+.container {
+  background: #fff;
+}
+
 .AboutHome {
   max-width: 1170px;
   margin: 0 auto;
-  height: 70vh;
-  display: flex;
   padding: 2.5rem 15px;
+}
+
+.AboutHome img {
+  height: 200px;
+  display: block;
+  margin: 1rem auto 4rem auto;
+}
+
+.AboutHome h2,
+.AboutHome p {
+  text-align: center;
+}
+
+.AboutHome h2 {
+  font-size: 44px;
+  color: #202124;
+  font-family: "Google Sans", "Noto Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.2;
+  padding-top: 2rem;
+}
+
+.AboutHome p {
+  padding: 3rem 2rem;
+  font-size: 20px;
+  line-height: 1.5;
+  text-justify: inter-word;
+  color: var(--text-color);
+}
+
+.Domains h2 {
+  font-size: 38px;
+  font-weight: 900;
+  color: var(--heading-color);
+  margin-top: 5rem;
+  padding: 0 2rem;
+  position: relative;
 }

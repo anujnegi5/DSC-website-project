@@ -1,11 +1,8 @@
 import React from "react";
-import { NavLink, Switch, Route } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import classes from "./Navbar.module.css";
 import Logo from "../../Logo/Logo";
-
-// Components
-import Home from "../../Home/Home";
 
 // import NavigationItems from "../NavigationItems/NavigationItems";
 // import DrawerToggle from "../SideDrawer/DrawerToggle/DrawerToggle";
@@ -56,16 +53,6 @@ const Navbar = () => (
         </div>
       </div>
     </div>
-
-    <Switch>
-      <Route path="/" exact component={Home} />
-      {/* HOME COMPonent */}
-    </Switch>
-    {/* Project COMPonent */}
-    {/* Event COMPonent */}
-    {/* Blog COMPonent */}
-    {/* Team COMPonent */}
-    {/* Contact COMPonent */}
   </header>
 );
 

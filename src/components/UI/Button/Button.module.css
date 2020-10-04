@@ -4,11 +4,11 @@
   color: #fff;
   display: inline-block;
   margin: 2rem 0;
-  border-radius: 2px;
+  border-radius: 4px;
   transition: 0.2s;
   font-size: 14px;
   font-weight: 500;
-  box-shadow: -4px 4px 8px var(--button-shadow-color);
+  /* box-shadow: -4px 4px 8px var(--button-shadow-color); */
   transform: translateY(-1px);
   background: #4285f4;
 }
