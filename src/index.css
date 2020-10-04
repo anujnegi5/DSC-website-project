@@ -1,11 +1,21 @@
-body {
-  margin: 0 auto;
-  font-family: "Roboto", "Oxygen", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --nav-inactive-color: #707070;
+  --heading-color: #3c4043;
+  --text-color: #5f6368;
+  --button-shadow-color: #b3b3b3;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+/* font-family: 'Noto Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; 
+font-family: 'Google Sans', sans-serif; */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", "Oxygen", sans-serif;
 }

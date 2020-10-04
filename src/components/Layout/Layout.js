@@ -24,7 +24,7 @@ class Layout extends Component {
       <>
         <div>
           <Navbar />
-          Navbar SideDrawer
+          Navbar,SideDrawer
           {/* <Navbar drawerToggleClicked={this.sideDrawerToggleHandler} /> */}
           {/* <SideDrawer
             open={this.state.showSideDrawer}

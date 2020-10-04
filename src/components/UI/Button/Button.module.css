@@ -1,0 +1,29 @@
+.Button {
+  padding: 12px 30px;
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  margin: 2rem 0;
+  border-radius: 2px;
+  transition: 0.2s;
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: -4px 4px 8px var(--button-shadow-color);
+  transform: translateY(-1px);
+  background: #4285f4;
+}
+
+.Button:hover {
+  color: white;
+  background-color: #185abc;
+  box-shadow: -4px 4px 16px var(--button-shadow-color);
+}
+
+.Button:active {
+  transform: translate(0px);
+  box-shadow: -2px 2px 4px #b3b3b3;
+}
+
+/* Google light color : #9FC2FF */
+/* Google dark color : #185abc */
+/* Google med color : #4285f4 */

@@ -1,0 +1,32 @@
+.ShowcaseHome {
+  max-width: 1170px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  height: 80vh;
+  display: flex;
+  padding: 2.5rem 15px;
+}
+
+h1 {
+  font-size: 44px;
+  font-family: "Google Sans", sans-serif;
+  font-weight: normal;
+  padding: 3rem 0 2rem 0;
+  margin: 0;
+  color: var(--heading-color);
+  line-height: 1.2;
+}
+
+h1 span {
+  font-weight: bold;
+}
+
+p {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  color: var(--text-color);
+  line-height: 1.5;
+  text-justify: inter-word;
+  margin-right: 1rem;
+  margin-bottom: 2rem;
+}
