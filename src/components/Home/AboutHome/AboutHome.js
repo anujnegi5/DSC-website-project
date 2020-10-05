@@ -15,7 +15,6 @@ const AboutHome = (props) => {
   const blueHeader = [classes.blue, classes.cardHeader];
   const greenHeader = [classes.green, classes.cardHeader];
   const yellowHeader = [classes.yellow, classes.cardHeader];
-  console.log(redHeader.join(" "));
 
   return (
     <>

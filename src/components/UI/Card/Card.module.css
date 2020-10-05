@@ -1,0 +1,71 @@
+/*HOVER COLOR #e4eefc
+  #e8f0fe */
+
+.card {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -4px rgba(0, 0, 0, 0.2),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  background-color: #fff;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+.card .cardImage {
+  position: relative;
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.cardHeader {
+  font-size: 24px;
+  color: var(--google-blue);
+  font-weight: 400;
+  text-align: left;
+  padding: 0 0 1rem 0;
+  line-height: 1.2;
+}
+
+.cardBody {
+  padding: 1rem 1.2rem 2rem 1.2rem;
+  text-align: left;
+  color: var(--text-color);
+}
+
+.cardBody p {
+  padding-bottom: 1rem;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.cardBody .btn {
+  display: inline-block;
+  padding: 0 8px;
+  line-height: 36px;
+  cursor: pointer;
+  height: 36px;
+  color: var(--google-blue);
+  font-size: 14px;
+  transition: background-color 0.2s;
+  vertical-align: middle;
+  margin: 0 -4px;
+  font-weight: 500;
+  border-radius: 4px;
+}
+
+.cardBody a {
+  text-decoration: none;
+}
+
+.cardBody .btn:hover {
+  background: #e4eefc;
+  border-radius: 4px;
+}
+
+@media (max-width: 992px) {
+  .card {
+    width: 230px;
+  }
+}

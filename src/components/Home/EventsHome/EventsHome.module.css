@@ -1,0 +1,28 @@
+.EventsHome {
+  background: #f1f3f4;
+  font-family: "Google Sans", "Noto Sans", "Roboto", sans-serif;
+  margin: 2rem 0;
+}
+
+.EventsHome h1 {
+  font-size: 52px;
+  color: #202124;
+  font-weight: 400;
+}
+
+.Container {
+  max-width: 1170px;
+  text-align: center;
+  margin: 0rem auto;
+  padding: 3rem 0;
+}
+
+.Container .cardList {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 4px;
+  margin-top: 2rem;
+  padding: 4rem 0;
+  justify-content: center;
+  justify-items: center;
+}
