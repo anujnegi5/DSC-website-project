@@ -6,6 +6,9 @@ import classes from "./SideDrawer.module.css";
 // import icons
 import * as MdIcons from "react-icons/md";
 
+// import components
+import Logo from "../../Logo/Logo";
+
 const SideDrawer = (props) => {
   const [sidebar, setSidebar] = useState(false);
 
@@ -18,6 +21,7 @@ const SideDrawer = (props) => {
         <Link to="/" className={classes.menuBars}>
           <MdIcons.MdMenu onClick={showSidebar} />
         </Link>
+        <Logo />
       </div>
       <nav className={sidebar ? navMenuActive.join(" ") : classes.navMenu}>
         <ul className={classes.navMenuItems} onClick={showSidebar}>
@@ -27,7 +31,7 @@ const SideDrawer = (props) => {
             </Link>
           </li>
           <li className={classes.navText}>
-            <Link to="/" exact className={classes.menuBars}>
+            <Link to="/" className={classes.menuBars}>
               <MdIcons.MdHome />
               <span>Home</span>
             </Link>
