@@ -1,10 +1,12 @@
 .Navbar {
   font-family: "Google Sans", sans-serif;
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  width: 100%;
   z-index: 1000;
-  background: #fff;
+  background: white;
 }
 
 @media (max-width: 768px) {
@@ -125,6 +127,11 @@ a:hover {
   border-bottom: 3px solid black;
 } */
 
+/* .NavigationItem a::after {
+  transform: translateY(100%);
+  opacity: 0;
+} */
+
 a.selected::after,
 .NavigationItem a:hover::after,
 .NavigationItem a:active::after {
@@ -134,12 +141,11 @@ a.selected::after,
   display: block;
   position: absolute;
   bottom: -3px;
-  /* background: #4285f4; */
   background: #185abc;
   z-index: 2;
   width: 60%;
-}
-
-a.NavbarLogo::after {
-  content: none;
+  /* transform: translateY(0);
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    -webkit-transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 1; */
 }

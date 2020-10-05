@@ -5,8 +5,18 @@ import classes from "./AboutHome.module.css";
 
 // import image
 import about from "../../../assets/images/aboutUS.png";
+import appDevelopment from "../../../assets/images/appDevelopment.svg";
+import webDevelopment from "../../../assets/images/webDevelopment.svg";
+import machineLearning from "../../../assets/images/Background_1.svg";
+import management from "../../../assets/images/management.svg";
 
 const AboutHome = (props) => {
+  const redHeader = [classes.red, classes.cardHeader];
+  const blueHeader = [classes.blue, classes.cardHeader];
+  const greenHeader = [classes.green, classes.cardHeader];
+  const yellowHeader = [classes.yellow, classes.cardHeader];
+  console.log(redHeader.join(" "));
+
   return (
     <>
       <div className={classes.container}>
@@ -24,21 +34,81 @@ const AboutHome = (props) => {
               create solutions to real life problems and promote the
               <strong>&nbsp;developer culture</strong>.
             </p>
-            <img src={about} alt="" />
+            <img src={about} className={classes.AboutHomeImg} alt="" />
           </div>
-          <div className={classes.Domains}>
-            <h2>Fields we work in</h2>
+        </div>
+        <div className={classes.Domains}>
+          <h2>Fields we work in</h2>
+          <div className={classes.card}>
             <div>
-              <h3>Web Development</h3>
+              <div className={classes.cardBody}>
+                <h3 className={blueHeader.join(" ")}>Web Development</h3>
+                <p className={classes.cardText}>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Explicabo dolorem necessitatibus, quaerat repudiandae aliquam
+                  maxime vitae rem, minus aperiam dolorum dolore labore, laborum
+                  cum voluptatum architecto. Fuga ipsam ex qui.
+                </p>
+              </div>
+              <img
+                src={webDevelopment}
+                alt="Web Development"
+                className={classes.DomainsImg}
+              />
             </div>
+          </div>
+          <div className={classes.card}>
             <div>
-              <h3>Machine Learning</h3>
+              <div className={classes.cardBody}>
+                <h3 className={redHeader.join(" ")}>Machine Learning</h3>
+                <p className={classes.cardText}>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Explicabo dolorem necessitatibus, quaerat repudiandae aliquam
+                  maxime vitae rem, minus aperiam dolorum dolore labore, laborum
+                  cum voluptatum architecto. Fuga ipsam ex qui.
+                </p>
+              </div>
+              <img
+                src={machineLearning}
+                alt="Machine Learning"
+                className={classes.DomainsImg}
+              />
             </div>
+          </div>
+          <div className={classes.card}>
             <div>
-              <h3>App Development</h3>
+              <div className={classes.cardBody}>
+                <h3 className={yellowHeader.join(" ")}>App Development</h3>
+                <p className={classes.cardText}>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Explicabo dolorem necessitatibus, quaerat repudiandae aliquam
+                  maxime vitae rem, minus aperiam dolorum dolore labore, laborum
+                  cum voluptatum architecto. Fuga ipsam ex qui.
+                </p>
+              </div>
+              <img
+                src={appDevelopment}
+                alt="App Development"
+                className={classes.DomainsImg}
+              />
             </div>
+          </div>
+          <div className={classes.card}>
             <div>
-              <h3>Management</h3>
+              <div className={classes.cardBody}>
+                <h3 className={greenHeader.join(" ")}>Management</h3>
+                <p className={classes.cardText}>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Explicabo dolorem necessitatibus, quaerat repudiandae aliquam
+                  maxime vitae rem, minus aperiam dolorum dolore labore, laborum
+                  cum voluptatum architecto. Fuga ipsam ex qui.
+                </p>
+              </div>
+              <img
+                src={management}
+                alt="Management"
+                className={classes.DomainsImg}
+              />
             </div>
           </div>
         </div>

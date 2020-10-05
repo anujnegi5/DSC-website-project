@@ -1,5 +1,6 @@
 .container {
   background: #f1f3f4;
+  margin-top: 70px;
 }
 
 .ShowcaseHome {
@@ -8,16 +9,17 @@
   margin: 0 auto;
   height: 578px;
   display: flex;
-  padding: 2.5rem 15px;
+  padding: 1.5rem 0px;
+  align-items: center;
 }
 
 .ShowcaseHome h1 {
-  font-size: 52px;
+  font-size: 54px;
   font-family: "Google Sans", sans-serif;
   font-weight: normal;
   padding: 3rem 0 2rem 0;
   margin: 0;
-  color: var(--heading-color);
+  color: #202124;
   line-height: 1.2;
 }
 
@@ -36,5 +38,7 @@
 }
 
 .ShowcaseHome img {
-  height: 425px;
+  width: 550px;
+  /* height:450px */
+  /* width: 400px; */
 }

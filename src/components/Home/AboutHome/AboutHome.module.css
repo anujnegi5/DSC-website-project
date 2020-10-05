@@ -8,7 +8,7 @@
   padding: 2.5rem 15px;
 }
 
-.AboutHome img {
+.AboutHome .AboutHomeImg {
   height: 200px;
   display: block;
   margin: 1rem auto 4rem auto;
@@ -20,7 +20,7 @@
 }
 
 .AboutHome h2 {
-  font-size: 44px;
+  font-size: 52px;
   color: #202124;
   font-family: "Google Sans", "Noto Sans", sans-serif;
   font-weight: 400;
@@ -37,10 +37,72 @@
 }
 
 .Domains h2 {
-  font-size: 38px;
-  font-weight: 900;
-  color: var(--heading-color);
-  margin-top: 5rem;
-  padding: 0 2rem;
+  text-align: center;
+  font-size: 56px;
+  font-weight: 400;
+  color: #202124;
+  font-family: "Google Sans", sans-serif;
+  padding: 5rem;
   position: relative;
+}
+
+.Domains .card {
+  display: flex;
+  padding: 5rem 1rem 5rem 1rem;
+}
+
+.Domains .card > div {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  /* align-items: center; */
+}
+
+.blue {
+  color: var(--google-dark-blue);
+}
+.red {
+  color: var(--google-red);
+}
+.green {
+  color: var(--google-dark-green);
+}
+.yellow {
+  color: var(--google-dark-yellow);
+}
+
+.Domains .card:nth-child(even) {
+  background: #fafafa;
+}
+
+.Domains .card:nth-child(odd) .cardBody {
+  order: 2;
+}
+
+.Domains .card .cardBody {
+  flex: 1;
+}
+
+.Domains .card .cardBody .cardHeader {
+  font-family: "Google Sans", "Noto Sans", sans-serif;
+  font-weight: 600;
+  /* color: var(--heading-color); */
+  font-size: 45px;
+  line-height: 1.2;
+  padding: 2rem 0 1rem 0;
+}
+
+.Domains .card .cardBody .cardText {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Google Sans", Arial, Helvetica, sans-serif;
+  color: var(--text-color);
+  line-height: 1.5;
+  padding: 1rem 0;
+}
+
+.Domains .DomainsImg {
+  display: block;
+  height: 270px;
+  flex: 1;
 }

@@ -32,9 +32,7 @@ const ShowcaseHome = (props) => {
             &nbsp;LEARN MORE
           </Button>
         </div>
-        <div>
-          <img src={showcaseImage} alt="DSC" />
-        </div>
+        <img src={showcaseImage} alt="DSC" />
       </div>
     </div>
   );
