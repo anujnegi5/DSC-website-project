@@ -1,10 +1,63 @@
 .BlogHome {
-  background: var(--google-med-lite-red);
+  background: #f1f3f4;
   margin: 0rem auto;
-  padding: 2rem 0;
+  padding: 2rem 0 5rem 0;
+  margin-bottom: 2rem;
 }
 
 .Container {
   max-width: 1170px;
   margin: 0 auto;
+}
+
+.BlogHome .blogHeader {
+  font-size: 48px;
+  font-family: "Google Sans", sans-serif;
+  line-height: 1.2;
+  padding: 1rem 0 3rem 0;
+  font-weight: 400;
+}
+
+.BlogHome .blogContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.BlogHome .blogContent img {
+  width: 540px;
+}
+
+.BlogHome .blogContent p {
+  font-size: 20px;
+  font-family: "Google Sans", sans-serif;
+  line-height: 1.5;
+  padding-bottom: 2rem;
+}
+
+.BlogHome .blogContent .blogBody {
+  padding: 1rem 4rem;
+}
+
+.BlogHome .blogContent .blogBody a {
+  padding: 12px 30px;
+  text-decoration: none;
+  color: white;
+  background: var(--google-blue);
+  border-radius: 2px;
+  display: inline-block;
+  transition: 0.2s;
+  font-size: 14px;
+  font-weight: 500;
+  transform: translateY(-1px);
+}
+
+.BlogHome .blogContent .blogBody a:hover {
+  background: var(--google-dark-blue);
+  box-shadow: -4px 4px 8px var(--button-shadow-color);
+  border-radius: 2px;
+}
+
+.BlogHome .blogContent .blogBody a:active {
+  transform: translateY(0px);
 }

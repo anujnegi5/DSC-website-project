@@ -1,6 +1,6 @@
 .ProjectsHome {
   margin: 0rem auto;
-  padding: 2rem 0 3rem 0;
+  padding: 2rem 0 5rem 0;
 }
 
 .Container {
@@ -9,15 +9,17 @@
 }
 
 .ProjectsHome .projectsHeader {
-  font-size: 52px;
+  font-size: 48px;
   font-family: "Google Sans", sans-serif;
   line-height: 1.2;
   padding: 1rem 0 3rem 0;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .ProjectsHome .projectsContent {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .ProjectsHome .projectsContent img {
@@ -33,7 +35,6 @@
 
 .ProjectsHome .projectsContent .projectsBody {
   padding: 1rem 4rem;
-  margin: auto 0;
 }
 
 .ProjectsHome .projectsContent .projectsBody a {
