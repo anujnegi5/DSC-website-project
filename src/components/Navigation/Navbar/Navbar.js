@@ -44,13 +44,13 @@ const Navbar = () => {
                 </NavLink>
               </li>
               <li className={classes.NavigationItem}>
-                <NavLink to="/projects" activeClassName={classes.selected}>
-                  Projects
+                <NavLink to="/events" activeClassName={classes.selected}>
+                  Events
                 </NavLink>
               </li>
               <li className={classes.NavigationItem}>
-                <NavLink to="/events" activeClassName={classes.selected}>
-                  Events
+                <NavLink to="/projects" activeClassName={classes.selected}>
+                  Projects
                 </NavLink>
               </li>
               <li className={classes.NavigationItem}>
