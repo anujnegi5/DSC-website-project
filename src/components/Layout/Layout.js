@@ -3,6 +3,7 @@ import { Switch, Route } from "react-router-dom";
 
 import classes from "./Layout.module.css";
 import Navbar from "../Navigation/Navbar/Navbar";
+import Footer from "../UI/Footer/Footer";
 import SideDrawer from "../Navigation/SideDrawer/SideDrawer";
 import Home from "../Home/Home";
 // import SideDrawer from "../Navigation/SideDrawer/SideDrawer";
@@ -37,6 +38,7 @@ class Layout extends Component {
         <Switch>
           <Route path="/" exact component={Home} />
         </Switch>
+        <Footer />
         <main className={classes.Content}>{this.props.children}</main>
       </>
     );
