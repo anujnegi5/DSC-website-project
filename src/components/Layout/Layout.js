@@ -6,6 +6,7 @@ import Navbar from "../Navigation/Navbar/Navbar";
 import Footer from "../UI/Footer/Footer";
 import SideDrawer from "../Navigation/SideDrawer/SideDrawer";
 import Home from "../Home/Home";
+import Contact from "../Contact/Contact";
 // import SideDrawer from "../Navigation/SideDrawer/SideDrawer";
 
 class Layout extends Component {
@@ -37,6 +38,7 @@ class Layout extends Component {
         </div>
         <Switch>
           <Route path="/" exact component={Home} />
+          <Route path="/contact" exact component={Contact} />
         </Switch>
         <Footer />
         <main className={classes.Content}>{this.props.children}</main>
