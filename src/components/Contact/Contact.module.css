@@ -1,8 +1,36 @@
 .Contact {
   margin-top: 70px;
+  font-family: "Google Sans", sans-serif;
+  min-height: 500px;
+  /* background: #000; */
+}
+
+.Contact h1 {
+  font-weight: 400;
+  color: var(--text-color);
+  line-height: 1.5;
+  text-align: center;
+  padding: 2rem;
 }
 
 .Container {
   margin: 0 auto;
   max-width: 1170px;
+  background: white;
+}
+
+.wrapper {
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: 5fr 4fr;
+  margin-bottom: 2rem;
+}
+
+.formContentRight {
+  padding: 0;
+}
+
+.formContentRight .imgContainer {
+  width: 100%;
 }

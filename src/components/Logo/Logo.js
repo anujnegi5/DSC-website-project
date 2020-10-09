@@ -1,6 +1,6 @@
 import React from "react";
 
-import dscLogo from "../../assets/Logo/Logo.svg";
+import dscLogo from "../../assets/Logo/Logo_1.svg";
 import classes from "./Logo.module.css";
 
 const Logo = () => (

@@ -65,7 +65,7 @@ const Navbar = () => {
               </li>
               <li className={classes.NavigationItem}>
                 <NavLink to="/contact" activeClassName={classes.selected}>
-                  Contact
+                  Register
                 </NavLink>
               </li>
             </ul>

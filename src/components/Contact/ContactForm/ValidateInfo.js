@@ -1,8 +1,8 @@
 export default function validateInfo(values) {
   let errors = {};
 
-  if (!values.name.trim()) {
-    errors.name = "Name required";
+  if (!values.fullName.trim()) {
+    errors.fullName = "Full Name required";
   }
 
   if (!values.email) {
@@ -11,9 +11,9 @@ export default function validateInfo(values) {
     errors.email = "Email address is invalid";
   }
 
-  if (!values.message) {
-    errors.message = "Message required";
-  }
+  // if (!values.message) {
+  //   errors.message = "Message required";
+  // }
 
   return errors;
 }
