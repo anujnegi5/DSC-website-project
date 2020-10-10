@@ -35,9 +35,7 @@ const SideDrawer = (props) => {
   return (
     <div className={classes.Container}>
       <div className={shadowActiveclass.join(" ")}>
-        <Link className={classes.menuBars}>
-          <MdIcons.MdMenu onClick={showSidebar} />
-        </Link>
+          <MdIcons.MdMenu onClick={showSidebar} className={classes.menuBars}/>
         <Logo />
       </div>
       <nav className={sidebar ? navMenuActive.join(" ") : classes.navMenu}>

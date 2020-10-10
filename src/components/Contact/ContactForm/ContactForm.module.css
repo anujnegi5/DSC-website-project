@@ -105,11 +105,11 @@
   background-color: #185abc;
   box-shadow: -4px 4px 16px var(--button-shadow-color);
   border-radius: 3px;
+  cursor: pointer;
 }
 
 .formInputBtn:active {
   transform: translate(0px);
-
   box-shadow: -2px 2px 4px #b3b3b3;
   border-radius: 3px;
 }

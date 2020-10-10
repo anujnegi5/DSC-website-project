@@ -12,7 +12,7 @@ const Success = () => {
       <div className={classes.formSuccess}>
         <h1>
           Thanks for Registering!
-          Check your email for more details.
+          Check your inbox for more details.
         </h1>
       </div>
       <img src={successImg} alt="success" className={classes.formImg2} />
