@@ -13,39 +13,41 @@ const ContactForm = (props) => {
   const [values, setValues] = useState({
     fullName: "",
     email: "",
-    year: "",
-    branch: "",
-    section:"",
+    year: "1",
+    branch: "1",
+    section: "",
     studentNumber: "",
-    universityRollNumber:"",
+    universityRollNumber: "",
   });
 
   const [errors, setErrors] = useState({});
   const [isSubmit, setIsSubmit] = useState(false);
 
-  const { successHandler } = props;
+  const { submitContact } = props;
 
   useEffect(() => {
     if (Object.keys(errors).length === 0 && isSubmit) {
-      successHandler();
+      submitContact();
     }
   }, [errors]);
 
   const valueChangeHandler = (e) => {
-    setValues({ ...values, [e.target.fullName]: e.target.value });
+    setValues({ ...values, [e.target.name]: e.target.value });
   };
 
   const submitHandler = (e) => {
     e.preventDefault();
     setErrors(validate(values));
     setIsSubmit(true);
+    console.log(values);
+    console.log(props);
   };
 
   return (
     <div className={classes.formContentLeft}>
       <form className={classes.form} onSubmit={submitHandler}>
         <div className={classes.logo}>
-          <Logo/>
+          <Logo />
         </div>
         <h1>Register</h1>
         <div className={classes.formFields}>
@@ -88,7 +90,6 @@ const ContactForm = (props) => {
             <label htmlFor="year" className={classes.formLabel}>
               Year
             </label>
-              
             <select id="year" name="year" value={values.year} onChange={valueChangeHandler}>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -100,7 +101,6 @@ const ContactForm = (props) => {
             <label htmlFor="branch" className={classes.formLabel}>
               Branch
             </label>
-              
             <select id="branch" name="branch" value={values.branch} onChange={valueChangeHandler}>
               <option value="CSE">CSE</option>
               <option value="CS">CS</option>
@@ -114,46 +114,52 @@ const ContactForm = (props) => {
             <label htmlFor="section" className={classes.formLabel}>
               Section
             </label>
-            <input
-              id="section"
-              type="text"
-              name="section"
-              placeholder="Enter your Section"
-              className={classes.formInput}
-              value={values.fullName}
-              onChange={valueChangeHandler}
-            />
-            {errors.section && <p>{errors.section}</p>}
+            <div>
+              <input
+                id="section"
+                type="text"
+                name="section"
+                placeholder="Enter your Section"
+                className={classes.formInput}
+                value={values.section}
+                onChange={valueChangeHandler}
+              />
+              {errors.section && <p>{errors.section}</p>}
+            </div>
           </div>
           <div className={classes.formInputs}>
             <label htmlFor="student_number" className={classes.formLabel}>
               Student Number
             </label>
-            <input
-              id="student_number"
-              type="text"
-              name="student_number"
-              placeholder="Enter your Student Number"
-              className={classes.formInput}
-              value={values.fullName}
-              onChange={valueChangeHandler}
-            />
-            {errors.studentNumber && <p>{errors.studentNumber}</p>}
+            <div>
+              <input
+                id="student_number"
+                type="text"
+                name="studentNumber"
+                placeholder="Enter your Student Number"
+                className={classes.formInput}
+                value={values.studentNumber}
+                onChange={valueChangeHandler}
+              />
+              {errors.studentNumber && <p>{errors.studentNumber}</p>}
+            </div>
           </div>
           <div className={classes.formInputs}>
             <label htmlFor="university_roll_number" className={classes.formLabel}>
               University Roll Number
             </label>
-            <input
-              id="university_roll_number"
-              type="text"
-              name="university_roll_number"
-              placeholder="Enter your University Roll Number"
-              className={classes.formInput}
-              value={values.fullName}
-              onChange={valueChangeHandler}
-            />
-            {errors.universityRollNumber && <p>{errors.universityRollNumber}</p>}
+            <div>
+              <input
+                id="university_roll_number"
+                type="text"
+                name="universityRollNumber"
+                placeholder="Enter your University Roll Number"
+                className={classes.formInput}
+                value={values.universityRollNumber}
+                onChange={valueChangeHandler}
+              />
+              {errors.universityRollNumber && <p>{errors.universityRollNumber}</p>}
+            </div>
           </div>
         </div>
         <button className={classes.formInputBtn} type="submit">

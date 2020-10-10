@@ -26,10 +26,10 @@ const Contact = (props) => {
           {!isSubmitted ? (
             <ContactForm submitContact={submitContact} />
           ) : (
-            <Success />
-          )}
+              <Success />
+            )}
           <div className={classes.formContentRight}>
-              <img src={registerImg} alt="register" className={classes.imgContainer} />
+            <img src={registerImg} alt="register" className={classes.imgContainer} />
           </div>
         </div>
       </div>

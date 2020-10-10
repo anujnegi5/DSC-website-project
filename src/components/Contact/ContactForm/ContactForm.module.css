@@ -61,11 +61,21 @@
   line-height: 41px;
 }
 
+.formInput:focus{
+  border: 1px solid var(--google-blue);
+  box-shadow: 0 2px 8px 1px var(--google-med-lite-blue);
+}
+
+.formInputs select:focus{
+  border: 1px solid var(--google-blue);
+  box-shadow: 0 2px 8px 1px var(--google-med-lite-blue);
+}
+
 .formInputs input,
 .formInputs select {
+  width: 100%;
   padding: 7px 9px;
   text-align: left;
-  border: none;
   display: block;
   margin: 1px 1px 0 1px;
   line-height: 24px;
@@ -99,6 +109,11 @@
 
 .formInputBtn:active {
   transform: translate(0px);
+
   box-shadow: -2px 2px 4px #b3b3b3;
   border-radius: 3px;
+}
+
+.formInputBtn:focus{
+  border: none;
 }

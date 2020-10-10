@@ -8,9 +8,12 @@ import successImg from "../../../assets/images/success.svg";
 
 const Success = () => {
   return (
-    <div className={classes.formContentRight}>
+    <div className={classes.formContentLeft}>
       <div className={classes.formSuccess}>
-        Thank you for reaching out to us.
+        <h1>
+          Thanks for Registering!
+          Check your email for more details.
+        </h1>
       </div>
       <img src={successImg} alt="success" className={classes.formImg2} />
     </div>

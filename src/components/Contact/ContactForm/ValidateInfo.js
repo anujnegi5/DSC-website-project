@@ -11,6 +11,17 @@ export default function validateInfo(values) {
     errors.email = "Email address is invalid";
   }
 
+  if(!values.section){
+    errors.section = "Enter Section";
+  }
+
+  if(!values.studentNumber){
+    errors.studentNumber = "Enter Student Number";
+  }
+  if(!values.universityRollNumber){
+    errors.universityRollNumber = "Enter University Roll Number";
+  }
+
   // if (!values.message) {
   //   errors.message = "Message required";
   // }

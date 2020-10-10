@@ -30,6 +30,14 @@
   color: var(--text-color);
 }
 
+.SideDrawer .menuBars:hover,
+.SideDrawer .menuBars:active,
+.close:hover,
+.close:active{
+  color: #202124;
+  transform: scale(1.02);
+}
+
 .navMenu {
   background-color: #fff;
   width: 250px;
