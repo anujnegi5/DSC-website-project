@@ -6,8 +6,9 @@
 }
 
 .Contact h1 {
+  font-size: 48px;
   font-weight: 400;
-  color: var(--text-color);
+  color: #202124;
   line-height: 1.5;
   text-align: center;
   padding: 2rem;

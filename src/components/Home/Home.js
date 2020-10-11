@@ -11,16 +11,14 @@ import TeamHome from "./TeamHome/TeamHome";
 class Home extends Component {
   render() {
     return (
-      <>
-        <div>
-          <ShowcaseHome />
-          <AboutHome />
-          <EventsHome />
-          <ProjectsHome />
-          <BlogHome />
-          <TeamHome />
-        </div>
-      </>
+      <div>
+        <ShowcaseHome />
+        <AboutHome />
+        <EventsHome />
+        <ProjectsHome />
+        <BlogHome />
+        <TeamHome />
+      </div>
     );
   }
 }

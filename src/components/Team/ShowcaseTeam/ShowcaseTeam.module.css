@@ -1,0 +1,29 @@
+.ShowcaseTeam {
+  margin-top: 70px;
+  font-family: "Google Sans", sans-serif;
+  border-bottom: 1px solid var(--border-color);
+  height: 300px;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2rem 0 5rem 0;
+}
+
+.teamHeader {
+  font-size: 48px;
+  font-weight: 400;
+  color: #202124;
+  line-height: 1.2;
+  padding-bottom: 2rem;
+}
+
+.teamInfo {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text-color);
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
