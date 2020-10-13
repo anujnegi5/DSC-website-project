@@ -1,0 +1,120 @@
+.card {
+  background: #fff;
+  height: 380px;
+  display: flex;
+  border-radius: 5px;
+  margin: 2rem auto 7rem auto;
+  justify-content: center;
+  box-shadow: 7px 7px 7px #e4e4e4, -7px -7px 7px #f8f8f8;
+  align-items: center;
+}
+
+.order {
+  order: 2;
+}
+
+.cardImg {
+  flex: 2;
+  overflow: hidden;
+  height: 380px;
+  border-right: 0.5px solid var(--border-color);
+  border-radius: 5px 0 0 5px;
+  /* box-shadow: 0 2px 10px 1px #ddd; */
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.cardImg img {
+  height: 100%;
+  border-radius: 5px 0 0 5px;
+}
+
+.cardBody {
+  flex: 3;
+  padding: 2rem;
+}
+
+.cardInfo {
+  /* display: flex; */
+  justify-content: space-between;
+}
+
+.cardHeader {
+  font-family: "Google Sans", sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+  padding-bottom: 1rem;
+  margin-top: -10px;
+  line-height: 1.2;
+}
+
+.tags {
+  list-style: none;
+  display: flex;
+  padding-bottom: 1rem;
+}
+
+.cardText {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  color: var(--text-color);
+  padding: 1rem 0;
+  text-align: justify;
+}
+
+.links {
+  margin: 1rem 0;
+  list-style: none;
+  display: flex;
+}
+
+.links li {
+  display: inline-block;
+  height: 16px;
+}
+
+.links a {
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  background: rgba(0, 0, 0, 0.774);
+  border-radius: 5px;
+  font-size: 1rem;
+  margin: 10px 10px 0 0;
+  padding: 5px 10px;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.links a span,
+.links a svg {
+  vertical-align: middle;
+}
+
+.links a svg {
+  transform: translateY(-1px);
+}
+
+.singleTag {
+  padding: 5px 15px;
+  border-radius: 4px;
+  background: #aaa;
+  font-size: 12px;
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+.web {
+  color: var(--google-dark-blue);
+  background: var(--google-med-blue);
+}
+.ml {
+  color: var(--google-dark-red);
+  background: var(--google-med-lite-red);
+}
+.app {
+  color: var(--google-dark-yellow);
+  background: var(--google-med-lite-yellow);
+}

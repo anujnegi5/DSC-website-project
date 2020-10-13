@@ -49,7 +49,7 @@ const TeamList = () => {
         <div className={classes.listContainer}>{fourthYearList}</div>
       </div>
       <div className={classes.section}>
-        <h1 className={classes.teamListHeader}>Members from 3th Year</h1>
+        <h1 className={classes.teamListHeader}>Members from 3rd Year</h1>
         <div className={classes.listContainer}>{thirdYearList}</div>
       </div>
     </div>

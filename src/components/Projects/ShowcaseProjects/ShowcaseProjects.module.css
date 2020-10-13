@@ -1,0 +1,29 @@
+.ShowcaseProjects {
+  margin-top: 70px;
+  border-bottom: 1px solid var(--border-color);
+  height: 300px;
+}
+
+.Container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.topContent {
+  font-family: "Google Sans", sans-serif;
+  text-align: center;
+  padding-bottom: 5rem;
+}
+
+.projectsHeader {
+  font-size: 48px;
+  font-weight: 400;
+  padding: 2rem 0;
+}
+
+.projectsText {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: var(--text-color);
+  font-weight: 500;
+}

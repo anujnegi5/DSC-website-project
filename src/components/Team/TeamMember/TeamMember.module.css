@@ -175,6 +175,11 @@
   color: #fff;
 }
 
+.card:hover .cardDesignation {
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.527);
+}
+
 .linkList {
   list-style: none;
   display: flex;
@@ -208,4 +213,16 @@
 
 .linkList li a:hover svg {
   color: var(--google-blue);
+}
+.linkList li a:hover .svgDomain1 {
+  color: var(--google-dark-blue);
+}
+.linkList li a:hover .svgDomain2 {
+  color: var(--google-dark-red);
+}
+.linkList li a:hover .svgDomain3 {
+  color: var(--google-dark-yellow);
+}
+.linkList li a:hover .svgDomain4 {
+  color: var(--google-dark-green);
 }
