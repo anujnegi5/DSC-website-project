@@ -6,18 +6,13 @@ import classes from "./ContactForm.module.css";
 
 //import function
 import validate from "./ValidateInfo";
+import { appendSpreadsheet } from "./Spreadsheet";
 
 //import component
 import Logo from "../../Logo/Logo";
 
 //import icons
 import * as MdIcons from "react-icons/md";
-
-// const SPREADSHEET_ID = "12LcdEv2CqmuZJCg8SP9l3LKHCkjKgPcd3Ti0wfFvBDw";
-// const CLIENT_ID =
-//   "764779329857-7bitespf0hdaqc9uer0bn3icllqt6k99.apps.googleusercontent.com";
-// const API_KEY = "AIzaSyBw1K50rz71EZI0ViaHqz2W-Zh8DV5-Gfc";
-// const SCOPE = "https://www.googleapis.com/auth/spreadsheets";
 
 const ContactForm = (props) => {
   const [values, setValues] = useState({
@@ -32,77 +27,21 @@ const ContactForm = (props) => {
 
   const [errors, setErrors] = useState({});
   const [isSubmit, setIsSubmit] = useState(false);
+  const [formError, setFormError] = useState(<div></div>);
 
   const valueChangeHandler = (e) => {
     setValues({ ...values, [e.target.name]: e.target.value });
   };
 
-  // const handleClientLoad = () => {
-  //   window.gapi.load("client:auth2", initClient);
-  // };
-
-  // const initClient = () => {
-  //   window.gapi.client.init({
-  //     apiKey: API_KEY,
-  //     clientId: CLIENT_ID,
-  //     scope: SCOPE,
-  //     discoveryDocs: [
-  //       "https://sheets.googleapis.com/$discovery/rest?version=v4",
-  //     ],
-  //   });
-  // };
-
   useEffect(() => {
     const { submitContact } = props;
-
-    // handleClientLoad();
 
     if (Object.keys(errors).length === 0 && isSubmit) {
       submitContact();
     }
   }, [errors, props, isSubmit]);
 
-  const resetForm = () => {
-    setValues({
-      fullName: "",
-      email: "",
-      year: "1",
-      branch: "1",
-      section: "",
-      studentNumber: "",
-      universityRollNumber: "",
-    });
-    console.log("resetForm function");
-  };
-
-  let formError = null;
-
   const submitHandler = (e) => {
-    // const params = {
-    //   spreadSheetId: SPREADSHEET_ID,
-    //   range: "Sheet1",
-    //   valueInputOption: "RAW",
-    //   insertDataOption: "INSERT_ROWS",
-    // };
-
-    // const valueRangeBody = {
-    //   majorDimension: "ROWS",
-    //   values: [values],
-    // };
-
-    // let request = window.gapi.client.sheets.spreadsheets.values.append(
-    //   params,
-    //   valueRangeBody
-    // );
-    // request.then(
-    //   (res) => {
-    //     console.log(res.result);
-    //   },
-    //   (reason) => {
-    //     console.log("error: " + reason.result.error.message);
-    //   }
-    // );
-
     e.preventDefault();
     setErrors(validate(values));
 
@@ -116,14 +55,11 @@ const ContactForm = (props) => {
       })
       .then((res) => {
         setIsSubmit(true);
-        if (Object.keys(errors).length === 0 && isSubmit) {
-          props.submitContact();
-        }
-        console.log(res);
-      }, resetForm)
+        appendSpreadsheet(data);
+      })
       .catch((err) => {
         console.log(err);
-        formError = (
+        setFormError(
           <div className={classes.error}>
             <MdIcons.MdError />
             <p>Error Ocurred</p>
@@ -134,11 +70,7 @@ const ContactForm = (props) => {
 
   return (
     <div className={classes.formContentLeft}>
-      <form
-        // autoComplete="off"
-        className={classes.form}
-        onSubmit={submitHandler}
-      >
+      <form className={classes.form} onSubmit={submitHandler}>
         <div className={classes.logo}>
           <Logo />
         </div>
@@ -269,10 +201,10 @@ const ContactForm = (props) => {
             </div>
           </div>
         </div>
+        {formError}
         <button className={classes.formInputBtn} type="submit">
           Register
         </button>
-        {formError}
       </form>
     </div>
   );

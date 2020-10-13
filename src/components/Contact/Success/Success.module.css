@@ -10,3 +10,7 @@
   margin: 0 auto;
   width: 75%;
 }
+
+.formSuccess h1 {
+  font-size: 36px;
+}

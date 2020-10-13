@@ -10,6 +10,7 @@ import Events from "../Events/Events";
 import Contact from "../Contact/Contact";
 import Team from "../Team/Team";
 import Projects from "../Projects/Projects";
+import Blog from "../Blog/Blog";
 // import SideDrawer from "../Navigation/SideDrawer/SideDrawer";
 
 class Layout extends Component {
@@ -43,6 +44,7 @@ class Layout extends Component {
           <Route path="/" exact component={Home} />
           <Route path="/events" exact component={Events} />
           <Route path="/projects" exact component={Projects} />
+          <Route path="/blog" exact component={Blog} />
           <Route path="/team" exact component={Team} />
           <Route path="/contact" exact component={Contact} />
         </Switch>
