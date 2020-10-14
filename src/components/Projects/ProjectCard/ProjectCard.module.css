@@ -40,6 +40,17 @@
   justify-content: space-between;
 }
 
+.cardInfo a {
+  text-decoration: none;
+  color: #202124;
+  display: inline-block;
+  transition: 0.2s;
+}
+
+.cardInfo a:hover {
+  color: var(--google-blue);
+}
+
 .cardHeader {
   font-family: "Google Sans", sans-serif;
   font-size: 36px;
@@ -86,6 +97,7 @@
   padding: 5px 10px;
   cursor: pointer;
   vertical-align: middle;
+  transition: 0.2s;
 }
 
 .links a span,
@@ -94,6 +106,14 @@
 }
 
 .links a svg {
+  transform: translateY(-1px);
+}
+
+.links a:hover,
+.links a:active {
+  color: rgba(0, 0, 0, 0.774);
+  background: #fff;
+  box-shadow: 5px 5px 5px #e4e4e4, -5px -5px 5px #f8f8f8;
   transform: translateY(-1px);
 }
 

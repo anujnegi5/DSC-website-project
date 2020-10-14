@@ -1,0 +1,29 @@
+.ShowcaseBlog {
+  margin-top: 70px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.Container {
+  max-width: 1170px;
+  margin: 0 auto;
+  font-family: "Google Sans", sans-serif;
+}
+
+.topContent {
+  padding: 2rem 0 5rem 0;
+  text-align: center;
+  height: 300px;
+}
+
+.showcaseHeader {
+  font-size: 48px;
+  font-weight: 400;
+  color: #202124;
+  padding-bottom: 2rem;
+}
+
+.contentInfo {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}

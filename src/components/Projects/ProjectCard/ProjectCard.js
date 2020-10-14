@@ -54,7 +54,9 @@ const ProjectCard = (props) => {
         </div>
         <div className={classes.cardBody}>
           <div className={classes.cardInfo}>
-            <h1 className={classes.cardHeader}>{props.cardHeader}</h1>
+            <a href={props.links.github}>
+              <h1 className={classes.cardHeader}>{props.cardHeader}</h1>
+            </a>
             <ul className={classes.tags}>
               {webList}
               {mlList}
