@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import classes from "./Footer.module.css";
 
 //icon Import
-import * as SiIcons from "react-icons/si";
+import * as FiIcons from "react-icons/fi";
 
 //import component
 import Logo from "../../Logo/Logo";
@@ -43,17 +43,17 @@ const Footer = (props) => {
             <ul className={classes.socialLinks}>
               <li>
                 <a href="https://www.instagram.com/dsc_akgec/">
-                  <SiIcons.SiInstagram />
+                  <FiIcons.FiInstagram />
                 </a>
               </li>
               <li>
                 <a href="https://www.instagram.com/dsc_akgec/">
-                  <SiIcons.SiInstagram />
+                  <FiIcons.FiFacebook />
                 </a>
               </li>
               <li>
                 <a href="https://www.instagram.com/dsc_akgec/">
-                  <SiIcons.SiInstagram />
+                  <FiIcons.FiLinkedin />
                 </a>
               </li>
             </ul>

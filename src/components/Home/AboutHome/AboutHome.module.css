@@ -56,7 +56,7 @@
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
+  align-items: center;
 }
 
 .blue {
@@ -87,7 +87,6 @@
 .Domains .card .cardBody .cardHeader {
   font-family: "Google Sans", "Noto Sans", sans-serif;
   font-weight: 600;
-  /* color: var(--heading-color); */
   font-size: 45px;
   line-height: 1.2;
   padding: 2rem 0 1rem 0;
@@ -100,10 +99,95 @@
   color: var(--text-color);
   line-height: 1.5;
   padding: 1rem 0;
+  text-align: justify;
 }
 
 .Domains .DomainsImg {
   display: block;
   height: 270px;
   flex: 1;
+}
+
+@media (max-width: 992px) {
+  .Domains .card {
+    padding: 2rem;
+    margin: 3rem 0;
+  }
+  .Domains .DomainsImg {
+    width: 300px;
+    padding: 1rem;
+  }
+  .Domains .card .cardBody .cardHeader {
+    font-size: 40px;
+  }
+  .Domains .card .cardBody .cardText {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 785px) {
+  .AboutHome h2 {
+    font-size: 32px;
+  }
+  .AboutHome p {
+    font-size: 16px;
+  }
+  .AboutHome .AboutHomeImg {
+    height: 130px;
+  }
+  .Domains h2 {
+    font-size: 36px;
+    padding: 1rem 1rem 3rem 1rem;
+  }
+  .Domains .card {
+    padding: 0.7rem;
+    margin: 2rem 0;
+  }
+  .Domains .DomainsImg {
+    width: 250px;
+    height: 200px;
+    padding: 0 0.7rem 0 0.7rem;
+  }
+  .Domains .card .cardBody .cardHeader {
+    font-size: 24px;
+  }
+  .Domains .card .cardBody .cardText {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 499px) {
+  .AboutHome {
+    padding-bottom: 1rem;
+  }
+  .AboutHome h2 {
+    font-size: 22px;
+  }
+  .AboutHome p {
+    font-size: 14px;
+  }
+  .AboutHome .AboutHomeImg {
+    height: 68px;
+  }
+  .Domains h2 {
+    font-size: 28px;
+    padding: 1rem 1rem 1rem 1rem;
+  }
+  .Domains .card {
+    padding: 1rem;
+    margin: 1.6rem 0;
+    text-align: center;
+  }
+  .Domains .DomainsImg {
+    display: none;
+  }
+  .Domains .card .cardBody .cardHeader {
+    font-size: 24px;
+    padding: 1.2rem;
+  }
+  .Domains .card .cardBody .cardText {
+    font-size: 14px;
+    line-height: 1.5;
+  }
 }

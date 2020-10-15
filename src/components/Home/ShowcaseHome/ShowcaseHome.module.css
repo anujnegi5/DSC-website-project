@@ -6,7 +6,6 @@
 
 .ShowcaseHome {
   max-width: 1170px;
-  box-sizing: border-box;
   margin: 0 auto;
   height: 578px;
   display: flex;
@@ -33,13 +32,74 @@
   font-family: "Roboto", sans-serif;
   color: var(--text-color);
   line-height: 1.5;
-  text-justify: inter-word;
-  padding-right: 3.5rem;
+  text-align: justify;
+  padding-right: 2.5rem;
   margin-bottom: 2rem;
 }
 
 .ShowcaseHome img {
   width: 550px;
-  /* height:450px */
-  /* width: 400px; */
+}
+
+@media (max-width: 1200px) {
+  .ShowcaseHome {
+    padding-left: 10px;
+  }
+  .ShowcaseHome h1 {
+    font-size: 42px;
+  }
+  .ShowcaseHome img {
+    width: 510px;
+  }
+}
+
+@media (max-width: 991px) {
+  .ShowcaseHome {
+    /* padding-left: 10px;s */
+    height: 678px;
+  }
+  .ShowcaseHome h1 {
+    font-size: 34px;
+  }
+  .ShowcaseHome p {
+    padding-right: 1rem;
+  }
+  .ShowcaseHome img {
+    width: 425px;
+  }
+}
+
+@media (max-width: 785px) {
+  .ShowcaseHome {
+    /* padding-left: 10px; */
+    height: 450px;
+    text-align: center;
+  }
+  .ShowcaseHome h1 {
+    font-size: 32px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .ShowcaseHome p {
+    padding: 0 2.5rem;
+    font-size: 15px;
+  }
+  .ShowcaseHome img {
+    display: none;
+  }
+}
+
+@media (max-width: 499px) {
+  .ShowcaseHome {
+    height: 450px;
+    text-align: center;
+  }
+  .ShowcaseHome h1 {
+    font-size: 26px;
+    padding: 0.5rem 0.25rem 1rem 0.25rem;
+  }
+  .ShowcaseHome p {
+    padding: 0 0.2rem;
+    font-size: 14px;
+  }
 }

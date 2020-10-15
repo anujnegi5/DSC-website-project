@@ -61,3 +61,74 @@
 .BlogHome .blogContent .blogBody a:active {
   transform: translateY(0px);
 }
+
+@media (max-width: 1199px) {
+  .Container {
+    padding: 0 10px;
+  }
+  .BlogHome .blogContent .blogBody {
+    padding: 1rem 1.3rem;
+  }
+  .BlogHome .blogContent img {
+    width: 480px;
+  }
+}
+
+@media (max-width: 991px) {
+  .BlogHome .blogContent img {
+    width: 380px;
+  }
+}
+
+@media (max-width: 785px) {
+  .BlogHome .blogContent img {
+    width: 280px;
+  }
+  .BlogHome .blogContent .blogBody p {
+    font-size: 16px;
+    padding-bottom: 1.5rem;
+  }
+  .BlogHome .blogHeader {
+    text-align: center;
+  }
+}
+
+@media (max-width: 599px) {
+  .BlogHome .blogContent img {
+    display: none;
+  }
+  .BlogHome .blogHeader {
+    font-size: 36px;
+    padding-bottom: 1rem;
+  }
+  .BlogHome .blogContent .blogBody p {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    padding-bottom: 2rem;
+  }
+  .BlogHome {
+    text-align: center;
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 399px) {
+  .BlogHome .blogHeader {
+    font-size: 30px;
+    padding-bottom: 1rem;
+  }
+  .BlogHome .blogContent .blogBody {
+    padding: 0.2rem;
+  }
+  .BlogHome .blogContent .blogBody p {
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    padding-bottom: 2rem;
+  }
+  .BlogHome {
+    text-align: center;
+    padding: 1rem 0.8rem 2rem 0.8rem;
+  }
+}

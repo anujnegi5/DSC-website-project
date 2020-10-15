@@ -3,7 +3,6 @@ import "./App.css";
 import { BrowserRouter } from "react-router-dom";
 
 import Layout from "./components/Layout/Layout";
-import { FaWindows } from "react-icons/fa";
 
 class App extends React.Component {
   state = {

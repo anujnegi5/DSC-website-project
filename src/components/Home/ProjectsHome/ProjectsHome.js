@@ -18,10 +18,6 @@ const ProjectsHome = () => {
             <p>
               The projects show what a team stands for and what mindset they
               keep towards transforming this world into a better place.
-              {/* Lorem
-              ipsum dolor sit amet consectetur adipisicing elit. Laborum
-              dolorem, non sunt fugit eveniet eos! Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Sapiente, a. */}
             </p>
             <Link to="/projects">SEE MORE</Link>
           </div>

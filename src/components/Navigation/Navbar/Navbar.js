@@ -4,9 +4,6 @@ import { NavLink } from "react-router-dom";
 import classes from "./Navbar.module.css";
 import Logo from "../../Logo/Logo";
 
-// import NavigationItems from "../NavigationItems/NavigationItems";
-// import DrawerToggle from "../SideDrawer/DrawerToggle/DrawerToggle";
-
 const Navbar = () => {
   const [navbar, setNavabr] = useState(false);
 

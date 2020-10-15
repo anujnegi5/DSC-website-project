@@ -5,10 +5,11 @@
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -4px rgba(0, 0, 0, 0.2),
     0 1px 5px 0 rgba(0, 0, 0, 0.12);
   background-color: #fff;
-  width: 350px;
+  width: 320px;
   display: flex;
   flex-direction: column;
   border-radius: 5px;
+  margin-right: 20px;
 }
 
 .card .cardImage {
@@ -40,6 +41,7 @@
   padding-bottom: 1rem;
   text-align: left;
   line-height: 1.5;
+  text-align: justify;
 }
 
 .cardBody .btn {
@@ -66,8 +68,62 @@
   border-radius: 4px;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
+  .cardHeader {
+    font-size: 22px;
+  }
+  .cardBody p {
+    font-size: 15px;
+  }
+  .cardBody .btn {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 991px) {
+  .cardHeader {
+    font-size: 22px;
+  }
+  .cardBody p {
+    font-size: 15px;
+  }
+  .cardBody .btn {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 785px) {
   .card {
-    width: 230px;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .cardHeader {
+    font-size: 22px;
+  }
+  .cardBody p {
+    font-size: 15px;
+  }
+  .cardBody .btn {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 399px) {
+  .card {
+    width: 250px;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .cardHeader {
+    font-size: 20px;
+  }
+  .cardBody p {
+    font-size: 14px;
+  }
+  .cardBody .btn {
+    font-size: 14px;
+  }
+  .cardBody {
+    padding: 0.9rem;
   }
 }

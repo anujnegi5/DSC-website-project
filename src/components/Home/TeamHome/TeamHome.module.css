@@ -59,3 +59,74 @@
 .TeamHome .projectsContent .teamBody a:active {
   transform: translateY(0px);
 }
+
+@media (max-width: 1199px) {
+  .Container {
+    padding: 0 10px;
+  }
+  .TeamHome .teamContent .teamBody {
+    padding: 1rem 1.3rem;
+  }
+  .TeamHome .teamContent img {
+    width: 480px;
+  }
+}
+
+@media (max-width: 991px) {
+  .TeamHome .teamContent img {
+    width: 380px;
+  }
+}
+
+@media (max-width: 785px) {
+  .TeamHome .teamContent img {
+    width: 280px;
+  }
+  .TeamHome .teamContent .teamBody p {
+    font-size: 16px;
+    padding-bottom: 1.5rem;
+  }
+  .TeamHome .blogHeader {
+    text-align: center;
+  }
+}
+
+@media (max-width: 599px) {
+  .TeamHome .teamContent img {
+    display: none;
+  }
+  .TeamHome .blogHeader {
+    font-size: 36px;
+    padding-bottom: 1rem;
+  }
+  .TeamHome .teamContent .teamBody p {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    padding-bottom: 2rem;
+  }
+  .TeamHome {
+    text-align: center;
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 399px) {
+  .TeamHome .blogHeader {
+    font-size: 30px;
+    padding-bottom: 1rem;
+  }
+  .TeamHome .teamContent .teamBody {
+    padding: 0.2rem;
+  }
+  .TeamHome .teamContent .teamBody p {
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    padding-bottom: 2rem;
+  }
+  .TeamHome {
+    text-align: center;
+    padding: 1rem 0.8rem 2rem 0.8rem;
+  }
+}
