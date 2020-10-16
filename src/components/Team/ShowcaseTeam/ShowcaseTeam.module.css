@@ -18,6 +18,7 @@
   color: #202124;
   line-height: 1.2;
   padding-bottom: 2rem;
+  transition: 0.2s;
 }
 
 .teamInfo {
@@ -26,4 +27,27 @@
   color: var(--text-color);
   font-weight: 500;
   font-family: "Poppins", sans-serif;
+  transition: 0.2s;
+}
+
+@media (max-width: 450px) {
+  .teamInfo {
+    padding: 0 10px;
+    font-size: 14px;
+  }
+  .teamHeader {
+    padding-bottom: 1rem;
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 270px) {
+  .teamInfo {
+    padding: 0 7px;
+    font-size: 12px;
+  }
+  .teamHeader {
+    padding-bottom: 1rem;
+    font-size: 32px;
+  }
 }

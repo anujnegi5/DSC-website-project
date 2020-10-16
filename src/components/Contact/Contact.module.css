@@ -12,12 +12,14 @@
   line-height: 1.5;
   text-align: center;
   padding: 2rem;
+  transition: 0.2s;
 }
 
 .Container {
   margin: 0 auto;
   max-width: 1170px;
   background: white;
+  transition: 0.2s;
 }
 
 .wrapper {
@@ -26,12 +28,72 @@
   display: grid;
   grid-template-columns: 5fr 4fr;
   margin-bottom: 2rem;
+  transition: 0.2s;
 }
 
 .formContentRight {
   padding: 0;
+  display: flex;
+  align-items: center;
 }
 
 .formContentRight .imgContainer {
   width: 100%;
+}
+
+@media (max-width: 1220px) {
+  .Container {
+    max-width: 900px;
+  }
+}
+
+@media (max-width: 992px) {
+  .Container {
+    max-width: 750px;
+  }
+  .wrapper {
+    grid-template-columns: 3fr 6fr;
+  }
+}
+
+@media (max-width: 786px) {
+  .Container {
+    max-width: 580px;
+  }
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+  .Contact h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 630px) {
+  .Container {
+    max-width: 480px;
+  }
+  .Contact h1 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 500px) {
+  .Container {
+    max-width: 370px;
+  }
+  .Contact h1 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .Container {
+    max-width: 250px;
+  }
+  .Contact h1 {
+    font-size: 24px;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }

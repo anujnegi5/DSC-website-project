@@ -6,6 +6,7 @@
   margin: 0;
   padding: 2rem 3rem;
   height: max-content;
+  transition: 0.2s;
 }
 
 .formContentLeft .form {
@@ -25,6 +26,7 @@
   margin: 0;
   color: #202124;
   text-align: left;
+  transition: 0.2s;
 }
 
 .logo img {
@@ -37,6 +39,7 @@
   width: 200%;
   padding-bottom: 8px;
   margin-left: -50%;
+  transition: 0.2s;
 }
 
 .formFields {
@@ -46,6 +49,7 @@
   vertical-align: top;
   width: 100%;
   text-align: left;
+  transition: 0.2s;
   /* border: 0 solid transparent;
   border-width: 0 24px; */
 }
@@ -59,6 +63,7 @@
 .formInputs label {
   color: var(--text-color);
   line-height: 41px;
+  transition: 0.2s;
 }
 
 .formInput:focus {
@@ -83,6 +88,7 @@
   font-size: 16px;
   border-radius: 4px;
   border: 1px solid var(--border-color);
+  transition: 0.2s;
 }
 
 .formInputBtn {
@@ -135,4 +141,100 @@
 
 .error p {
   padding-left: 1rem;
+}
+
+@media (max-width: 992px) {
+  .form h1 {
+    padding: 5px 0 0 0;
+    text-align: center;
+  }
+  .logo {
+    width: 110%;
+    margin-left: -5%;
+  }
+  .formContentLeft {
+    padding: 1rem 2rem;
+  }
+  .formFields {
+    padding: 10px 0 0 0;
+  }
+  .formInputBtn {
+    margin: 15px 0 0 0;
+  }
+  .formInputs label {
+    line-height: 2;
+  }
+  .formInputs input,
+  .formInputs select {
+    padding: 5px 7px;
+  }
+}
+
+@media (max-width: 786px) {
+  .form h1 {
+    padding: 16px 0 10px 0;
+  }
+  .formContentLeft {
+    padding: 2rem 3rem;
+  }
+  .formInputBtn {
+    margin: 25px 0 0 0;
+  }
+  .formInputs input,
+  .formInputs select {
+    padding: 7px 9px;
+  }
+}
+
+@media (max-width: 630px) {
+  .form h1 {
+    padding: 12px 0 10px 0;
+  }
+  .formContentLeft {
+    padding: 1rem 1rem 2rem 1rem;
+  }
+  .formFields {
+    padding: 8px 0 0 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .formInputs label {
+    line-height: 2;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .formInputs input,
+  .formInputs select {
+    padding: 6px 8px;
+  }
+}
+
+@media (max-width: 400px) {
+  .formContentLeft .form {
+    margin: 0;
+    padding: 0;
+  }
+  .formContentLeft {
+    margin: 0;
+    padding: 1rem 0.5rem;
+  }
+  .formInputs {
+    grid-template-columns: 1fr;
+  }
+  .formInputs label {
+    line-height: 2;
+    font-size: 16px;
+    font-weight: 500;
+    padding-left: 12px;
+  }
+  .formInputs input,
+  .formInputs select {
+    padding: 5px 7px;
+    width: 90%;
+  }
+  .formInputs input,
+  .formInputs select {
+    margin: 0 auto;
+  }
 }

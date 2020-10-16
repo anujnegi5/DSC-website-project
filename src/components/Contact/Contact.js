@@ -4,14 +4,14 @@ import React, { useState } from "react";
 import classes from "./Contact.module.css";
 
 //image import
-import registerImg from "../../assets/images/register.png"
+import registerImg from "../../assets/images/register.png";
 
 //import COmponents
 import ContactForm from "./ContactForm/ContactForm";
 import Success from "./Success/Success";
 
 const Contact = (props) => {
-  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(true);
 
   function submitContact() {
     console.log("Success");
@@ -26,10 +26,14 @@ const Contact = (props) => {
           {!isSubmitted ? (
             <ContactForm submitContact={submitContact} />
           ) : (
-              <Success />
-            )}
+            <Success />
+          )}
           <div className={classes.formContentRight}>
-            <img src={registerImg} alt="register" className={classes.imgContainer} />
+            <img
+              src={registerImg}
+              alt="register"
+              className={classes.imgContainer}
+            />
           </div>
         </div>
       </div>

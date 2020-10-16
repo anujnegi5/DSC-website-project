@@ -226,3 +226,25 @@
 .linkList li a:hover .svgDomain4 {
   color: var(--google-dark-green);
 }
+
+@media (max-width: 350px) {
+  .TeamMember {
+    height: 420px;
+    width: auto;
+  }
+  .card {
+    width: 200px;
+    height: 350px;
+  }
+  .cardImg {
+    width: 200px;
+    padding: 1.2rem;
+  }
+  .cardName {
+    font-size: 20px;
+  }
+  .cardDesignation {
+    font-size: 16px;
+    color: var(--text-color);
+  }
+}
