@@ -37,14 +37,14 @@ const SideDrawer = (props) => {
       <div className={shadowActiveclass.join(" ")}>
         <MdIcons.MdMenu onClick={showSidebar} className={classes.menuBars} />
         &nbsp;
-        <Link to="/" exact>
+        <Link to="/">
           <Logo />
         </Link>
       </div>
       <nav className={sidebar ? navMenuActive.join(" ") : classes.navMenu}>
         <ul className={classes.navMenuItems} onClick={showSidebar}>
           <li className={classes.SideDrawerToggle}>
-            <Link className={classes.menuBars}>
+            <Link to="#" className={classes.menuBars}>
               <MdIcons.MdClose className={classes.close} />
             </Link>
           </li>
@@ -67,7 +67,7 @@ const SideDrawer = (props) => {
             </Link>
           </li>
           <li className={classes.navText}>
-            <Link to="/blogs" className={classes.menuBars}>
+            <Link to="/blog" className={classes.menuBars}>
               <MdIcons.MdBook />
               <span>Blogs</span>
             </Link>

@@ -27,3 +27,13 @@
   font-weight: 400;
   font-family: "Poppins", sans-serif;
 }
+
+@media (max-width: 400px) {
+  .showcaseHeader {
+    font-size: 36px;
+  }
+  .contentInfo {
+    font-size: 15px;
+    padding: 0 10px;
+  }
+}
