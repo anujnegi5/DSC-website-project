@@ -7,6 +7,8 @@ import classes from "./ProjectCard.module.css";
 import * as FaIcons from "react-icons/fa";
 
 const ProjectCard = (props) => {
+  const mediaMatch = window.matchMedia("(max-width:819px");
+
   let web = props.cardTags["web"];
   let ml = props.cardTags["ml"];
   let app = props.cardTags["app"];
@@ -38,10 +40,16 @@ const ProjectCard = (props) => {
   let borderStyle = {};
 
   let orderClass = [classes.cardImg];
-  if (!props.order) {
+  if (!props.order && !mediaMatch) {
     orderClass = [classes.cardImg, classes.order];
     borderStyle = {
       borderLeft: "0.5px solid var(--border-color)",
+      borderRight: "none",
+    };
+  }
+  if (mediaMatch) {
+    borderStyle = {
+      borderLeft: "none",
       borderRight: "none",
     };
   }

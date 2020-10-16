@@ -27,3 +27,19 @@
   color: var(--text-color);
   font-weight: 500;
 }
+
+@media (min-width: 401px) {
+  .projectsText {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .projectsHeader {
+    font-size: 36px;
+  }
+  .projectsText {
+    padding: 0 10px;
+    font-size: 14px;
+  }
+}

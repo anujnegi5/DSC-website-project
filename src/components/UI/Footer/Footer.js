@@ -16,7 +16,9 @@ const Footer = (props) => {
       <div className={classes.Container}>
         <div className={classes.footerTop}>
           <div className={classes.logo}>
-            <Logo />
+            <Link to="/">
+              <Logo />
+            </Link>
           </div>
           <div className={classes.quickLinks}>
             <h5 className={classes.linkHeader}>Quick Links</h5>

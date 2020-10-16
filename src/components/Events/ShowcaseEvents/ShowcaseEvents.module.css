@@ -8,19 +8,18 @@
   max-width: 1170px;
   margin: 0 auto;
   font-family: "Google Sans", sans-serif;
+  height: 300px;
+  text-align: center;
 }
 
-.topContent {
+/* .topContent {
   text-align: center;
-  /* background: url(../../../assets//images/eventsBackground.png) center
-    center/cover no-repeat; */
-
   position: relative;
   width: 200%;
   margin-left: -50%;
   padding-bottom: 5rem;
   height: 300px;
-}
+} */
 
 .eventsHeading {
   font-size: 48px;
@@ -34,4 +33,21 @@
   font-size: 18px;
   color: var(--text-color);
   font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .eventsHeading {
+    font-size: 36px;
+  }
+  .eventsInfo {
+    font-size: 16px;
+    padding: 0.5rem;
+    display: inline-block;
+  }
+}
+
+@media (max-width: 580px) {
+  .eventsInfo {
+    padding: 0 1rem;
+  }
 }
