@@ -1,6 +1,9 @@
 .ShowcaseBlog {
   margin-top: 70px;
   border-bottom: 1px solid var(--border-color);
+  background: url("../../../assets/background/background19.png") center
+    center/cover no-repeat;
+  background-attachment: fixed;
 }
 
 .Container {
@@ -16,16 +19,32 @@
 }
 
 .showcaseHeader {
-  font-size: 48px;
+  font-size: 56px;
   font-weight: 400;
   color: #202124;
-  padding-bottom: 2rem;
+  padding-bottom: 2.5rem;
+  transition: 0.2s;
 }
 
 .contentInfo {
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0 7rem;
   font-family: "Poppins", sans-serif;
+  transition: 0.2s;
+}
+
+@media (max-width: 785px) {
+  .contentInfo {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 599px) {
+  .contentInfo {
+    font-size: 17px;
+    padding: 0 10px;
+  }
 }
 
 @media (max-width: 400px) {

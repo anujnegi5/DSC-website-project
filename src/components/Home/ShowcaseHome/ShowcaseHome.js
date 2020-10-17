@@ -13,7 +13,7 @@ const ShowcaseHome = (props) => {
   return (
     <div className={classes.container}>
       <div className={classes.ShowcaseHome}>
-        <div>
+        <div className={classes.ShowcaseBody}>
           <h1>
             Developer Student Clubs <span>AKGEC</span>
           </h1>

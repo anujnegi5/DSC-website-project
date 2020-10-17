@@ -2,6 +2,9 @@
   margin-top: 70px;
   overflow: hidden;
   border-bottom: 1px solid var(--border-color);
+  background: url("../../../assets/background/background9.png") center
+    center/cover no-repeat;
+  background-attachment: fixed;
 }
 
 .ShowcaseEvents .Container {
@@ -22,7 +25,7 @@
 } */
 
 .eventsHeading {
-  font-size: 48px;
+  font-size: 56px;
   font-weight: 400;
   color: #202124;
   letter-spacing: normal;
@@ -31,10 +34,11 @@
 }
 
 .eventsInfo {
-  font-size: 18px;
-  color: var(--text-color);
+  font-size: 20px;
   font-weight: 500;
   transition: 0.2s;
+  color: #202124;
+  font-family: "Poppins", sans-serif;
 }
 
 @media (max-width: 768px) {
