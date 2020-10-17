@@ -27,12 +27,14 @@
   color: #202124;
   letter-spacing: normal;
   padding: 2rem 0 2rem 0;
+  transition: 0.2s;
 }
 
 .eventsInfo {
   font-size: 18px;
   color: var(--text-color);
   font-weight: 500;
+  transition: 0.2s;
 }
 
 @media (max-width: 768px) {

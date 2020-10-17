@@ -14,6 +14,7 @@
   height: 480px;
   display: flex;
   flex-direction: column;
+  transition: 0.2s;
 }
 
 .cardImg {
@@ -37,6 +38,7 @@
   color: var(--text-color);
   border-radius: 0 0 5px 5px;
   text-align: justify;
+  transition: 0.2s;
 }
 
 .cardTitle {
@@ -44,6 +46,7 @@
   font-weight: 500;
   margin: 10px 0;
   color: var(--google-blue);
+  transition: 0.2s;
 }
 
 .cardSubtitle {
@@ -51,10 +54,12 @@
   font-size: 15px;
   font-weight: bold;
   color: var(--text-color);
+  transition: 0.2s;
 }
 
 .cardText {
   margin-bottom: 1rem;
+  transition: 0.2s;
 }
 
 .cardBtn {
@@ -71,6 +76,7 @@
   vertical-align: middle;
   margin: 0 -4px;
   border-radius: 4px;
+  transition: 0.2s;
 }
 
 .cardBtn:hover {

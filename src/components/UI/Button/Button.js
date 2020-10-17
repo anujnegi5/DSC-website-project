@@ -4,7 +4,6 @@ import React from "react";
 import classes from "./Button.module.css";
 
 const Button = (props) => {
-  console.log(props.children);
   return (
     <a href={props.href} className={classes.Button} style={props.style}>
       <i className="material-icons">{props.icon}</i>

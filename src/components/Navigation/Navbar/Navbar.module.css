@@ -7,6 +7,7 @@
   width: 100%;
   z-index: 1000;
   background: white;
+  transition: 0.2s;
 }
 
 .Navbar.active {
@@ -21,11 +22,13 @@
   padding: 0 15px;
   margin: 0 auto;
   box-sizing: border-box;
+  transition: 0.2s;
 }
 
 .NavbarLeft {
   float: left;
   box-sizing: border-box;
+  transition: 0.2s;
 }
 
 .NavbarLogo {
@@ -38,6 +41,7 @@
   font-size: 19px;
   line-height: 21px;
   align-items: center;
+  transition: 0.2s;
 }
 
 .NavbarLogo:active,
@@ -51,6 +55,7 @@
   list-style: none;
   height: 100%;
   align-items: center;
+  transition: 0.2s;
 }
 
 .NavigationItem {

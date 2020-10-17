@@ -1,5 +1,6 @@
 .Logo {
   height: 40.36px;
+  transition: 0.2s;
 }
 
 @media (max-width: 450px) {

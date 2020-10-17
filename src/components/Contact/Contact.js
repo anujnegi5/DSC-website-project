@@ -11,7 +11,7 @@ import ContactForm from "./ContactForm/ContactForm";
 import Success from "./Success/Success";
 
 const Contact = (props) => {
-  const [isSubmitted, setIsSubmitted] = useState(true);
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
   function submitContact() {
     console.log("Success");

@@ -8,6 +8,7 @@
   bottom: 0;
   left: 0; */
   background-color: #fff;
+  transition: 0.2s;
 }
 
 .Container {
@@ -20,11 +21,13 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  transition: 0.2s;
 }
 
 .footerTop .logo {
   padding: 0 15px;
   border-bottom: 1px solid #fff;
+  transition: 0.2s;
 }
 
 .quickLinks,
@@ -33,6 +36,7 @@
   color: #676c72;
   font-family: "Google Sans", sans-serif;
   font-size: 14px;
+  transition: 0.2s;
 }
 
 .quickLinks .linkHeader,
@@ -47,10 +51,12 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  transition: 0.2s;
 }
 
 .quickLinks .linkList li {
   margin-left: 15px;
+  transition: 0.2s;
 }
 
 .quickLinks .linkList li a {
@@ -74,6 +80,7 @@
 .socials .socialLinks {
   list-style: none;
   display: flex;
+  transition: 0.2s;
 }
 
 .socials .socialLinks li {
@@ -101,6 +108,7 @@
   overflow: auto;
   width: 500%;
   margin-left: -200%;
+  transition: 0.2s;
 }
 
 .footerBottom {

@@ -1,11 +1,13 @@
 .ProjectsHome {
   margin: 0rem auto;
   padding: 2rem 0 5rem 0;
+  transition: 0.2s;
 }
 
 .Container {
   max-width: 1170px;
   margin: 0 auto;
+  transition: 0.2s;
 }
 
 .ProjectsHome .projectsHeader {
@@ -14,6 +16,7 @@
   line-height: 1.2;
   padding: 1rem 0 3rem 0;
   font-weight: 400;
+  transition: 0.2s;
 }
 
 .ProjectsHome .projectsContent {
@@ -24,6 +27,7 @@
 
 .ProjectsHome .projectsContent img {
   width: 540px;
+  transition: 0.2s;
 }
 
 .ProjectsHome .projectsContent .projectsBody p {
@@ -31,10 +35,12 @@
   font-family: "Google Sans", sans-serif;
   line-height: 1.5;
   padding-bottom: 2rem;
+  transition: 0.2s;
 }
 
 .ProjectsHome .projectsContent .projectsBody {
   padding: 1rem 4rem;
+  transition: 0.2s;
 }
 
 .ProjectsHome .projectsContent .projectsBody a {

@@ -19,6 +19,7 @@
   font-size: 48px;
   font-weight: 400;
   padding: 2rem 0;
+  transition: 0.2s;
 }
 
 .projectsText {
@@ -26,6 +27,7 @@
   font-size: 16px;
   color: var(--text-color);
   font-weight: 500;
+  transition: 0.2s;
 }
 
 @media (min-width: 401px) {

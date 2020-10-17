@@ -2,6 +2,7 @@
   height: 100%;
   padding: 3rem;
   justify-content: center;
+  transition: 0.2s;
 }
 
 /* .formContentLeft .formSuccess  */
@@ -9,11 +10,13 @@
   display: block;
   margin: 0 auto;
   width: 75%;
+  transition: 0.2s;
 }
 
 .formSuccess h1 {
   font-size: 36px;
   padding: 0 0 1rem 0;
+  transition: 0.2s;
 }
 
 @media (max-width: 1220px) {
