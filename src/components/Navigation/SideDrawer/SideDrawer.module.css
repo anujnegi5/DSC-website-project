@@ -29,7 +29,7 @@
 .close:hover,
 .close:active {
   color: #202124;
-  transform: scale(1.02);
+  transform: scale(1.08);
 }
 
 .navMenu {
@@ -63,7 +63,6 @@
 }
 
 .navText:hover {
-  /* border-bottom: none; */
   box-shadow: 5px 5px 20px #eee;
 }
 
@@ -71,26 +70,49 @@
   text-decoration: none;
   color: var(--text-color);
   font-size: 14px;
-  width: 80%;
+  width: 100%;
   padding: 21px 20px;
-  height: 80%;
+  height: 100%;
   display: flex;
   align-items: center;
   border-radius: 0px 30px 30px 0;
-  transition: 0.2s;
+  transition: 0.3s;
+  border-left: 6px solid #fff;
 }
 
 .navText a svg {
   font-size: 20px;
 }
-
-.navText a:hover {
-  background-color: #202124;
-  color: white;
-}
-
 .navMenuItems {
   width: 100%;
+}
+
+/* Selected class */
+.navText .selected {
+  border-left: 6px solid var(--google-blue);
+  transition: 0.2s;
+}
+.navText .selected svg,
+.navText .selected span {
+  color: var(--google-blue);
+  font-weight: 900;
+  transition: 0.2s;
+}
+.navText:last-child .selected {
+  border-left: 6px solid var(--google-med-green);
+  transition: 0.2s;
+}
+.navText:last-child .selected svg,
+.navText:last-child .selected span {
+  color: var(--google-med-green);
+  font-weight: 900;
+  transition: 0.2s;
+}
+.navText a:hover {
+  border-left: 6px solid var(--google-blue);
+}
+.navText:last-child a:hover {
+  border-left: 6px solid var(--google-med-green);
 }
 
 .SideDrawerToggle {

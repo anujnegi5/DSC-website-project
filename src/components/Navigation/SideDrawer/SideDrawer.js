@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 // import CSS
 import classes from "./SideDrawer.module.css";
 
@@ -49,40 +49,65 @@ const SideDrawer = (props) => {
             </Link>
           </li>
           <li className={classes.navText}>
-            <Link to="/" className={classes.menuBars}>
+            <NavLink
+              to="/"
+              exact
+              className={classes.menuBars}
+              activeClassName={classes.selected}
+            >
               <MdIcons.MdHome />
               <span>Home</span>
-            </Link>
+            </NavLink>
           </li>
           <li className={classes.navText}>
-            <Link to="/projects" className={classes.menuBars}>
+            <NavLink
+              to="/projects"
+              className={classes.menuBars}
+              activeClassName={classes.selected}
+            >
               <MdIcons.MdWork />
               <span>Projects</span>
-            </Link>
+            </NavLink>
           </li>
           <li className={classes.navText}>
-            <Link to="/events" className={classes.menuBars}>
+            <NavLink
+              to="/events"
+              className={classes.menuBars}
+              activeClassName={classes.selected}
+            >
               <MdIcons.MdEvent />
               <span>Events</span>
-            </Link>
+            </NavLink>
           </li>
           <li className={classes.navText}>
-            <Link to="/blog" className={classes.menuBars}>
+            <NavLink
+              to="/blog"
+              className={classes.menuBars}
+              activeClassName={classes.selected}
+            >
               <MdIcons.MdBook />
               <span>Blogs</span>
-            </Link>
+            </NavLink>
           </li>
           <li className={classes.navText}>
-            <Link to="/team" className={classes.menuBars}>
+            <NavLink
+              to="/team"
+              className={classes.menuBars}
+              activeClassName={classes.selected}
+            >
               <MdIcons.MdPeople />
               <span>Team</span>
-            </Link>
+            </NavLink>
           </li>
           <li className={classes.navText}>
-            <Link to="/contact" className={classes.menuBars}>
+            <NavLink
+              to="/contact"
+              className={classes.menuBars}
+              activeClassName={classes.selected}
+            >
               <MdIcons.MdMessage />
-              <span>Contact</span>
-            </Link>
+              <span>Register</span>
+            </NavLink>
           </li>
         </ul>
       </nav>

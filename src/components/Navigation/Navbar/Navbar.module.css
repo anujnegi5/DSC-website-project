@@ -1,3 +1,26 @@
+/* Transition  classes*/
+/* .appear {
+  transform: scale(0.9);
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.appearActive {
+  transform: scale(1);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.appearDone {
+  transform: scale(1);
+  top: 0;
+  left: 0;
+  width: 100%;
+} */
+
+/* Transition classes end */
+
 .Navbar {
   font-family: "Google Sans", sans-serif;
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);

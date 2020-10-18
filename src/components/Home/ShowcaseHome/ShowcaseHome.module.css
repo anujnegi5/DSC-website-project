@@ -1,3 +1,35 @@
+/* Transition class */
+/* .appear {
+  opacity: 0;
+}
+.appearActive {
+  opacity: 1;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.appearDone {
+  opacity: 1;
+} */
+/* .enter {
+  opacity: 0;
+  transform: scale(0.9);
+} */
+/* .enter.enterActive {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 5s;
+} */
+/* .enter.enterDone {
+  opacity: 1;
+} */
+/* .exit {
+}
+.exitActive {
+}
+.exitDone {
+} */
+
+/* Transition class end */
+
 .container {
   background: url("../../../assets/background/background15.png") no-repeat;
   background-position: center center;

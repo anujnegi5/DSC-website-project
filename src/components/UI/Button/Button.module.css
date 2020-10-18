@@ -8,7 +8,6 @@
   transition: 0.2s;
   font-size: 14px;
   font-weight: 500;
-  /* box-shadow: -4px 4px 8px var(--button-shadow-color); */
   transform: translateY(-1px);
   background: #4285f4;
 }
