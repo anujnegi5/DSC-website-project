@@ -40,14 +40,15 @@ const ProjectCard = (props) => {
   let borderStyle = {};
 
   let orderClass = [classes.cardImg];
-  if (!props.order && !mediaMatch) {
+  // console.log(mediaMatch);
+  if (!props.order && !mediaMatch.matches) {
     orderClass = [classes.cardImg, classes.order];
     borderStyle = {
       borderLeft: "0.5px solid var(--border-color)",
       borderRight: "none",
     };
-  }
-  if (mediaMatch) {
+  } else if (mediaMatch.matches) {
+    orderClass = [classes.cardImg];
     borderStyle = {
       borderLeft: "none",
       borderRight: "none",

@@ -2,8 +2,8 @@
   background: #f1f3f4;
   font-family: "Google Sans", "Noto Sans", "Roboto", sans-serif;
   margin: 2rem 0;
-  background: url("../../../assets/background/background3.jpg") center
-    center/cover no-repeat;
+  /* background: url("../../../assets/background/background3.jpg") center
+    center/cover no-repeat; */
   /* background-attachment: fixed; */
   /* position: relative; */
 }

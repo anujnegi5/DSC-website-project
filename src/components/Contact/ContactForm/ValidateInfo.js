@@ -13,13 +13,18 @@ export default function validateInfo(values) {
 
   if (!values.section) {
     errors.section = "Enter Section";
+  } else if (!/^\d+$/.test(values.section)) {
+    errors.section = "Invalid! Number only";
   }
 
   if (!values.studentNumber) {
     errors.studentNumber = "Enter Student Number";
   } else if (values.studentNumber.length !== 7) {
     errors.studentNumber = "Student Number should be of 7 digits";
+  } else if (!/^\d+$/.test(values.studentNumber)) {
+    errors.studentNumber = "Invalid! Numbers only";
   }
+
   if (!values.universityRollNumber) {
     errors.universityRollNumber = "Enter University Roll Number";
   } else if (
@@ -27,6 +32,8 @@ export default function validateInfo(values) {
     values.universityRollNumber.length !== 10
   ) {
     errors.universityRollNumber = "Invalid University Roll Number";
+  } else if (!/^\d+$/.test(values.universityRollNumber)) {
+    errors.universityRollNumber = "Invalid! Numbers only";
   }
 
   return errors;

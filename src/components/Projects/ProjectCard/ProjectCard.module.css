@@ -5,7 +5,8 @@
   border-radius: 5px;
   margin: 2rem auto 7rem auto;
   justify-content: center;
-  box-shadow: 7px 7px 7px #e4e4e4, -7px -7px 7px #f8f8f8;
+  /* box-shadow: 7px 7px 7px #e4e4e4, -7px -7px 7px #f8f8f8; */
+  box-shadow: 9px 9px 18px #d9d9d9, -9px -9px 18px #ffffff;
   align-items: center;
   transition: 0.2s;
 }

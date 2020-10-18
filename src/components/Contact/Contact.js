@@ -14,7 +14,7 @@ const Contact = (props) => {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   function submitContact() {
-    console.log("Success");
+    // console.log("Success");
     setIsSubmitted(true);
   }
 

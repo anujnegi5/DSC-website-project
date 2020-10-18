@@ -2,9 +2,8 @@
   #e8f0fe */
 
 .card {
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -4px rgba(0, 0, 0, 0.2),
-    0 1px 5px 0 rgba(0, 0, 0, 0.12);
-  background-color: #fff;
+  background: #f1f3f4;
+  box-shadow: 5px 5px 10px #cdcfcf, -5px -5px 10px #ffffff;
   width: 320px;
   display: flex;
   flex-direction: column;
