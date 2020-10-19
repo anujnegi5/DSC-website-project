@@ -7,7 +7,7 @@ import classes from "./Layout.module.css";
 
 // import component
 import Navbar from "../Navigation/Navbar/Navbar";
-import Footer from "../UI/Footer/Footer";
+// import Footer from "../UI/Footer/Footer";
 import SideDrawer from "../Navigation/SideDrawer/SideDrawer";
 import Home from "../Home/Home";
 import Events from "../Events/Events";

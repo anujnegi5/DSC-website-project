@@ -106,6 +106,9 @@
     /* padding-left: 10px;s */
     height: 678px;
   }
+  .ShowcaseBody {
+    padding-left: 0px;
+  }
   .ShowcaseHome h1 {
     font-size: 34px;
   }
