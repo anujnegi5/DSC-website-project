@@ -46,6 +46,7 @@ const ProjectCard = (props) => {
     borderStyle = {
       borderLeft: "0.5px solid var(--border-color)",
       borderRight: "none",
+      borderRadius: "0 5px 5px 0",
     };
   } else if (mediaMatch.matches) {
     orderClass = [classes.cardImg];

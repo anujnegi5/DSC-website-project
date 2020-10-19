@@ -16,7 +16,7 @@ const TeamHome = () => {
           <img src={teamImg} alt="team" />
           <div className={classes.teamBody}>
             <p>
-              A Team is as efficient as the members of it's team are. This is a
+              A Team is as efficient as the members of its team are. This is a
               rundown of how explicable each individual is and how they
               supplement the team.
             </p>

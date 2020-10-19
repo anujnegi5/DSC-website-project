@@ -22,7 +22,7 @@ const AboutHome = (props) => {
         <div className={classes.AboutHome}>
           <div>
             <h2>
-              What <strong>DSC-AKGEC</strong> do?
+              What does&nbsp;<strong>DSC-AKGEC</strong> do?
             </h2>
             <p>
               We at
