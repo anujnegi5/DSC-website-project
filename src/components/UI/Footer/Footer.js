@@ -12,7 +12,7 @@ import Logo from "../../Logo/Logo";
 
 const Footer = (props) => {
   return (
-    <div className={classes.Footer}>
+    <footer className={classes.Footer}>
       <div className={classes.Container}>
         <div className={classes.footerTop}>
           <div className={classes.logo}>
@@ -68,7 +68,7 @@ const Footer = (props) => {
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 

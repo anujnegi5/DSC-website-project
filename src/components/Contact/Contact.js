@@ -1,44 +1,27 @@
-import React, { useState } from "react";
+import React from "react";
 
 //import css
 import classes from "./Contact.module.css";
 
-//image import
-import registerImg from "../../assets/images/register.png";
+// import component
+import ShowcaseContact from "./ShowcaseContact/ShowcaseContact";
+import Footer from "../UI/Footer/Footer";
 
-//import COmponents
-import ContactForm from "./ContactForm/ContactForm";
-import Success from "./Success/Success";
+class Contact extends React.Component {
+  // componentDidMount() {
+  //   var heightEle = document.querySelector(`.${classes.Contact}`).clientHeight;
+  //   // console.log(heightEle);
+  //   this.props.setHeight(heightEle);
+  // }
 
-const Contact = (props) => {
-  const [isSubmitted, setIsSubmitted] = useState(false);
-
-  function submitContact() {
-    // console.log("Success");
-    setIsSubmitted(true);
-  }
-
-  return (
-    <div className={classes.Contact}>
-      <div className={classes.Container}>
-        <h1>Registration Open</h1>
-        <div className={classes.wrapper}>
-          {!isSubmitted ? (
-            <ContactForm submitContact={submitContact} />
-          ) : (
-            <Success />
-          )}
-          <div className={classes.formContentRight}>
-            <img
-              src={registerImg}
-              alt="register"
-              className={classes.imgContainer}
-            />
-          </div>
-        </div>
+  render() {
+    return (
+      <div className={classes.Contact}>
+        <ShowcaseContact />
+        <Footer />
       </div>
-    </div>
-  );
-};
+    );
+  }
+}
 
 export default Contact;

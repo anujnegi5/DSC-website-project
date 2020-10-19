@@ -23,9 +23,7 @@ class App extends React.Component {
     }
     return (
       <BrowserRouter>
-        <div>
-          <Layout />
-        </div>
+        <Layout />
       </BrowserRouter>
     );
   }
