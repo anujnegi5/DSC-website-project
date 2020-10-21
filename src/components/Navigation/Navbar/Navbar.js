@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-// import { CSSTransition } from "react-transition-group";
 
 import classes from "./Navbar.module.css";
 import Logo from "../../Logo/Logo";
@@ -25,16 +24,7 @@ const Navbar = () => {
   window.addEventListener("scroll", boxShadowHandler);
 
   return (
-    // <CSSTransition
-    //   in={true}
-    //   appear={true}
-    //   timeout={{
-    //     appear: 400,
-    //   }}
-    //   classNames={{ ...classes }}
-    // >
     <header>
-      {/* <DrawerToggle clicked={props.drawerToggleClicked} />*/}
       <div className={navbarActiveclass.join(" ")}>
         <div className={classes.Container}>
           <div className={classes.NavbarLeft}>
@@ -79,8 +69,19 @@ const Navbar = () => {
         </div>
       </div>
     </header>
-    // </CSSTransition>
   );
 };
 
 export default Navbar;
+
+// import { CSSTransition } from "react-transition-group";
+
+// <CSSTransition
+//   in={true}
+//   appear={true}
+//   timeout={{
+//     appear: 400,
+//   }}
+//   classNames={{ ...classes }}
+// >
+// </CSSTransition>

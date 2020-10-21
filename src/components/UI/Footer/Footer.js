@@ -64,7 +64,7 @@ const Footer = (props) => {
         <hr className={classes.footerGap} />
         <div className={classes.footerBottom}>
           <div className={classes.footerBottomContainer}>
-            <div className={classes.copyright}>&copy; Google</div>
+            <div className={classes.copyright}>&copy; Anuj Negi</div>
           </div>
         </div>
       </div>

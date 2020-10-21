@@ -1,5 +1,4 @@
 import React from "react";
-// import { CSSTransition } from "react-transition-group";
 
 // css import
 import classes from "./ShowcaseHome.module.css";
@@ -12,14 +11,6 @@ import Button from "../../UI/Button/Button";
 
 const ShowcaseHome = (props) => {
   return (
-    // <CSSTransition
-    //   in={true}
-    //   timeout={{
-    //     appear: 400,
-    //   }}
-    //   appear={true}
-    //   classNames={{ ...classes }}
-    // >
     <div className={classes.container}>
       <div className={classes.ShowcaseHome}>
         <div className={classes.ShowcaseBody}>
@@ -44,8 +35,18 @@ const ShowcaseHome = (props) => {
         <img src={showcaseImage} alt="DSC" />
       </div>
     </div>
-    // </CSSTransition>
   );
 };
 
 export default ShowcaseHome;
+
+// import { CSSTransition } from "react-transition-group";
+// <CSSTransition
+//   in={true}
+//   timeout={{
+//     appear: 400,
+//   }}
+//   appear={true}
+//   classNames={{ ...classes }}
+// >
+// </CSSTransition>

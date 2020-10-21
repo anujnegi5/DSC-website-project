@@ -1,5 +1,5 @@
 import React from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 //css import
 import classes from "./EventsHome.module.css";
@@ -8,7 +8,7 @@ import classes from "./EventsHome.module.css";
 import image1 from "../../../assets/images/events.jpg";
 
 //import component
-import Button from "../../UI/Button/Button";
+// import Button from "../../UI/Button/Button";
 import Card from "../../UI/Card/Card";
 
 const EventsHome = (props) => {
@@ -42,7 +42,9 @@ const EventsHome = (props) => {
             </>
           </Card>
         </div>
-        <Button>SEE MORE</Button>
+        <Link to="/events" className={classes.eventBtn}>
+          SEE MORE
+        </Link>
       </div>
     </div>
   );
